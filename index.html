@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Admin</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/main.js"></script>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our style CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <aside class="side-nav" id="show-side-navigation1">
+
+        <div class="heading">
+            <img src="file/admin.jpg" alt="">
+            <div class="info">
+                <h3><a href="#">Tran Thi Nguyet</a></h3>
+                <p>The University of Da Nang - University of Science and Education majoring</p>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Type here"><i class="fa fa-search"></i>
+        </div>
+        <ul class="categories">
+            <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> About us</a>
+                <ul class="side-nav-dropdown">
+                    <li><a href="#">Update information</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+            </li>
+            <li><i class="fa fa-support fa-fw"></i><a href="#"> Product Management</a>
+                <ul class="side-nav-dropdown">
+                    <li><a href="#">IOS</a></li>
+                    <li><a href="#">Samsung</a></li>
+                    <li><a href="#">Xiaomi</a></li>
+                    <li><a href="#">Nokia</a></li>
+                    <li><a href="#">OPPO</a></li>
+                </ul>
+            </li>
+            <li><i class="fa fa-envelope fa-th"></i><a href="#"> Portfolio Management</a>
+
+            </li>
+            <li><i class="fa fa-envelope fa-fw"></i><a href="#"> Contact us</a>
+            </li>
+            <li><i class="fa fa-users fa-fw"></i><a href="#"> User Management</a>
+                <ul class="side-nav-dropdown">
+                    <li><a href="#">Manager</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">User</a></li>
+                </ul>
+            </li>
+            <li><i class="fa fa-bolt fa-fw"></i><a href="#"> Invoice Management</a>
+            </li>
+
+            <li><i class="fa fa-fw fa-comments"></i><a href="#"> Messages <span class="num dang">56</span></a></li>
+            <li><i class="fa fa-bell fa-bell"></i><a href="#"> Notification <span class="num prim">6</span></a>
+
+            </li>
+
+        </ul>
+    </aside>
+    <section id="contents">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <i class="fa fa-align-right"></i>
+              </button>
+                    <a class="navbar-brand" href="#">my<span class="main-color">WebsiteAdmin</span></a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My profile <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-user-o fw"></i> My account</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o fw"></i> My inbox</a></li>
+                                <li><a href="#"><i class="fa fa-question-circle-o fw"></i> Help</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="fa fa-sign-out"></i> Log out</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-comments"></i><span>23</span></a></li>
+                        <li><a href="#"><i class="fa fa-bell"></i><span>98</span></a></li>
+                        <li><a href="#"><i data-show="show-side-navigation1" class="fa fa-bars show-side-btn"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="welcome">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content">
+                            <h2>Welcome to Admin</h2>
+                            <p>Nice to meet you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="statistics">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box">
+                            <i class="fa fa-envelope fa-fw bg-primary"></i>
+                            <div class="info">
+                                <h3>1,245</h3> <span>Product</span>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box">
+                            <i class="fa fa-file fa-fw danger"></i>
+                            <div class="info">
+                                <h3>34</h3> <span>Contact</span>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box">
+                            <i class="fa fa-users fa-fw success"></i>
+                            <div class="info">
+                                <h3>5,245</h3> <span>Users</span>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="admins">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box">
+                            <h3>Manager:</h3>
+                            <div class="admin">
+                                <div class="img">
+                                    <img class="img-responsive" src="file/admin.jpg" alt="admin">
+                                </div>
+                                <div class="info">
+                                    <h3>Tran Thi Nguyet</h3>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box">
+                            <h3>Moderators:</h3>
+                            <div class="admin">
+                                <div class="img">
+                                    <img class="img-responsive" src="file/bbv.jpg" alt="admin">
+                                </div>
+                                <div class="info">
+                                    <h3>Trinh Nhat Ha Vy</h3>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class='statis text-center'>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="box bg-primary">
+                            <i class="fa fa-eye"></i>
+                            <h3>5,154</h3>
+                            <p class="lead">Page views</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box danger">
+                            <i class="fa fa-user"></i>
+                            <h3>245</h3>
+                            <p class="lead">User registered</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box warning">
+                            <i class="fa fa-shopping-cart"></i>
+                            <h3>5,154</h3>
+                            <p class="lead">Product sales</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box success">
+                            <i class="fa fa-handshake-o"></i>
+                            <h3>5,154</h3>
+                            <p class="lead">Transactions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- JAVASCRIPT -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
