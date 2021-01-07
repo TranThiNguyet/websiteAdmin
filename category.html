@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Admin</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/main.js"></script>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our style CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/validate.js"></script>
+</head>
+
+<body>
+    <aside class="side-nav" id="show-side-navigation1">
+
+        <div class="heading">
+            <img src="file/admin.jpg" alt="">
+            <div class="info">
+                <h3><a href="#">Tran Thi Nguyet</a></h3>
+                <p>The University of Da Nang - University of Science and Education majoring</p>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Type here"><i class="fa fa-search"></i>
+        </div>
+        <ul class="categories">
+            <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> About us</a>
+                <ul class="side-nav-dropdown">
+                    <li><a href="update.html">Update information</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+            </li>
+            <li><i class="fa fa-support fa-fw"></i><a href="new.html"> News Management</a>
+            </li>
+            <li><i class="fa fa-envelope fa-th"></i><a href="category.html"> Category Management</a>
+            </li>
+            <li><i class="fa fa-users fa-fw"></i><a href="user.html"> User Management</a>
+            </li>
+            <li><i class="fa fa-fw fa-comments"></i><a href="#"> Messages <span class="num dang">56</span></a></li>
+            <li><i class="fa fa-bell fa-bell"></i><a href="#"> Notification <span class="num prim">6</span></a>
+            </li>
+        </ul>
+    </aside>
+    <section id="contents">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <i class="fa fa-align-right"></i>
+              </button>
+                    <a class="navbar-brand" href="#">my<span class="main-color">WebsiteAdmin</span></a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My profile <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-user-o fw"></i> My account</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o fw"></i> My inbox</a></li>
+                                <li><a href="#"><i class="fa fa-question-circle-o fw"></i> Help</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="fa fa-sign-out"></i> Log out</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-comments"></i><span>23</span></a></li>
+                        <li><a href="#"><i class="fa fa-bell"></i><span>98</span></a></li>
+                        <li><a href="#"><i data-show="show-side-navigation1" class="fa fa-bars show-side-btn"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark" style="color: aliceblue;">News category</h1>
+                    </div>
+                    <br />
+                    <div class="col-sm-6">
+                        <div class="float-right">
+                            <a href="" class="btn btn-success"> Add Category</a>
+                        </div>
+                        <br />
+                        <div class="float-right mr-2">
+                            <a href="" class="btn btn-danger" title="Tải lại trang"><i class="fa fa-retweet" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!-- /.content-header -->
+        <!-- Main content -->
+        <section class="content" style="color: #888888;">
+            <div class="container-fluid">
+                <div class="card" style="min-height: 400px">
+
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover" style="min-width: 960px">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Name category</th>
+                                        <th>Order</th>
+                                        <th style="width: 150px;">Function</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Dien đan Khoa Hoc và Công Nghe</td>
+                                        <td>1</td>
+                                        <td class="text-center">
+                                            <a class="btn btn-sm text-muted btn-light" href="" title="Sửa" class="edit"><i class="fas fa-edit"></i></a>
+                                            <a class="btn btn-sm text-muted btn-light" href="" onclick="return confirm('Xóa danh mục tin đồng thời xóa tất cả các tin thuộc danh mục này?')" title="Xóa" class="delete"><i class="fa fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>KH-CN và Đoi moi sang tao</td>
+                                        <td>2</td>
+                                        <td class="text-center">
+                                            <a class="btn btn-sm text-muted btn-light" href="" title="Sửa" class="edit"><i class="fas fa-edit"></i></a>
+                                            <a class="btn btn-sm text-muted btn-light" href="" onclick="return confirm('Xóa danh mục tin đồng thời xóa tất cả các tin thuộc danh mục này?')" title="Xóa" class="delete"><i class="fa fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Khoa hoc và Đoi song</td>
+                                        <td>3</td>
+                                        <td class="text-center">
+                                            <a class="btn btn-sm text-muted btn-light" href="" title="Sửa" class="edit"><i class="fas fa-edit"></i></a>
+                                            <a class="btn btn-sm text-muted btn-light" href="" onclick="return confirm('Xóa danh mục tin đồng thời xóa tất cả các tin thuộc danh mục này?')" title="Xóa" class="delete"><i class="fa fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>KH&CN nuoc ngooi</td>
+                                        <td>4</td>
+                                        <td class="text-center">
+                                            <a class="btn btn-sm text-muted btn-light" href="" title="Sửa" class="edit"><i class="fas fa-edit"></i></a>
+                                            <a class="btn btn-sm text-muted btn-light" href="" onclick="return confirm('Xóa danh mục tin đồng thời xóa tất cả các tin thuộc danh mục này?')" title="Xóa" class="delete"><i class="fa fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Cong nghe moi - San pham moi</td>
+                                        <td>5</td>
+                                        <td class="text-center">
+                                            <a class="btn btn-sm text-muted btn-light" href="" title="Sửa" class="edit"><i class="fas fa-edit"></i></a>
+                                            <a class="btn btn-sm text-muted btn-light" href="" onclick="return confirm('Xóa danh mục tin đồng thời xóa tất cả các tin thuộc danh mục này?')" title="Xóa" class="delete"><i class="fa fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+
+                </div>
+            </div>
+        </section>
+        <!-- /.main-content -->
+
+    </section>
+    <!-- JAVASCRIPT -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

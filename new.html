@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Admin</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/main.js"></script>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our style CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <aside class="side-nav" id="show-side-navigation1">
+
+        <div class="heading">
+            <img src="file/admin.jpg" alt="">
+            <div class="info">
+                <h3><a href="#">Tran Thi Nguyet</a></h3>
+                <p>The University of Da Nang - University of Science and Education majoring</p>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Type here"><i class="fa fa-search"></i>
+        </div>
+        <ul class="categories">
+            <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> About us</a>
+                <ul class="side-nav-dropdown">
+                    <li><a href="update.html">Update information</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+            </li>
+            <li><i class="fa fa-support fa-fw"></i><a href="new.html"> News Management</a>
+            </li>
+            <li><i class="fa fa-envelope fa-th"></i><a href="category.html"> Category Management</a>
+            </li>
+
+            <li><i class="fa fa-users fa-fw"></i><a href="user.html"> User Management</a>
+            </li>
+            <li><i class="fa fa-fw fa-comments"></i><a href="#"> Messages <span class="num dang">56</span></a></li>
+            <li><i class="fa fa-bell fa-bell"></i><a href="#"> Notification <span class="num prim">6</span></a>
+            </li>
+        </ul>
+    </aside>
+    <section id="contents">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <i class="fa fa-align-right"></i>
+              </button>
+                    <a class="navbar-brand" href="#">my<span class="main-color">WebsiteAdmin</span></a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My profile <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-user-o fw"></i> My account</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o fw"></i> My inbox</a></li>
+                                <li><a href="#"><i class="fa fa-question-circle-o fw"></i> Help</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="fa fa-sign-out"></i> Log out</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-comments"></i><span>23</span></a></li>
+                        <li><a href="#"><i class="fa fa-bell"></i><span>98</span></a></li>
+                        <li><a href="#"><i data-show="show-side-navigation1" class="fa fa-bars show-side-btn"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark" style="color: aliceblue;"> News list</h1>
+                    </div>
+                    <br />
+                    <div class="col-sm-6">
+                        <div class="float-right">
+                            <a href="" class="btn btn-success">Add News</a>
+                        </div>
+                        <br />
+                        <div class="float-right mr-2">
+                            <a href="" class="btn btn-danger" title="Tải lại trang"><i class="fa fa-retweet" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!-- /.content-header -->
+        <!-- Main content -->
+        <section class="content" style="color: #888888;">
+            <div class="container-fluid">
+                <div class="card" style="min-height: 400px">
+
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover" style="min-width: 960px">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Name new</th>
+                                        <th>Category</th>
+                                        <th class="text-center" style="width: 90px;">View</th>
+                                        <th style="width: 150px;">Picture</th>
+
+                                        <th style="width: 150px;">Function</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Giong nhan lai LĐ-19</td>
+                                        <td>Cong nghe moi - San pham moi</td>
+                                        <td class="text-center">92</td>
+                                        <td><img src="file/giong-nhan-lai-ld-19.jpg" class="img-fluid" alt="thumb-new" width="100px" height="100px;"></td>
+
+                                        <td class="text-center">
+
+                                            <a class="btn btn-sm text-muted btn-light" href="" title="Sửa" class="edit"><i class="fas fa-edit"></i></a>
+                                            <a class="btn btn-sm text-muted btn-light" href="" onclick="return confirm('Bạn thật sự muốn xóa tin này?')" title="Xóa" class="delete"><i class="fa fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Giong thanh long ruot trang LĐ-18</td>
+                                        <td>Cong nghe moi - San pham moi</td>
+                                        <td class="text-center">32</td>
+                                        <td>
+                                            <img src="file/giong-thanh-long-ruot-trang-ld-18.jpg " class="img-fluid " alt="thumb-new " width="100px " height="100px; "></td>
+
+                                        <td class="text-center ">
+
+                                            <a class="btn btn-sm text-muted btn-light " href=" " title="Sửa " class="edit "><i class="fas fa-edit "></i></a>
+                                            <a class="btn btn-sm text-muted btn-light " href=" " onclick="return confirm( 'Bạn thật sự muốn xóa tin này?') " title="Xóa " class="delete "><i class="fa fa-trash "></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Giong lua OM10636</td>
+                                        <td>Công nghe moi - San pham moi</td>
+                                        <td class="text-center ">12</td>
+                                        <td><img src="file/giong-lua-om10636.jpg " class="img-fluid " alt="thumb-new " width="100px " height="100px; "></td>
+
+                                        <td class="text-center ">
+
+                                            <a class="btn btn-sm text-muted btn-light " href=" " title="Sửa " class="edit "><i class="fas fa-edit "></i></a>
+                                            <a class="btn btn-sm text-muted btn-light " href=" " onclick="return confirm( 'Bạn thật sự muốn xóa tin này?') " title="Xóa " class="delete "><i class="fa fa-trash "></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Bao ho chi dan dia ly “Chau Thanh Long An” cho san pham thanh long</td>
+                                        <td>Công nghe moi - San pham moi</td>
+                                        <td class="text-center ">14</td>
+                                        <td><img src="file/bao-ho-chi-dan-dia-ly-chau-thanh-long-an-cho-san-pham-thanh-long.jpg " class="img-fluid " alt="thumb-new " width="100px " height="100px; "></td>
+
+                                        <td class="text-center ">
+
+                                            <a class="btn btn-sm text-muted btn-light " href=" " title="Sửa " class="edit "><i class="fas fa-edit "></i></a>
+                                            <a class="btn btn-sm text-muted btn-light " href=" " onclick="return confirm( 'Bạn thật sự muốn xóa tin này?') " title="Xóa " class="delete "><i class="fa fa-trash "></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Giai Nobel Kinh te năm 2020 duoc trao cho cac chu nhan tao ra cac hinh thuc đau gia moi</td>
+                                        <td>KH&CN nuoc ngoai</td>
+                                        <td class="text-center ">19</td>
+                                        <td><img src="file/giai-nobel-kinh-te-nam-2020-duoc-trao-cho-cac-chu-nhan-tao-ra-cac-hinh-thuc-dau-gia-moi.jpg " class="img-fluid " alt="thumb-new " width="100px " height="100px; "></td>
+
+                                        <td class="text-center ">
+
+                                            <a class="btn btn-sm text-muted btn-light " href=" " title="Sửa " class="edit "><i class="fas fa-edit "></i></a>
+                                            <a class="btn btn-sm text-muted btn-light " href=" " onclick="return confirm( 'Bạn thật sự muốn xóa tin này?') " title="Xóa " class="delete "><i class="fa fa-trash "></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer clearfix ">
+                        <div class="row ">
+                            <div class="col-sm-6 col-12 ">
+                                <span class="text-muted ">Page 1/4</span>
+                            </div>
+                            <div class="col-sm-6 col-12 ">
+                                <ul class="pagination m-0 float-right ">
+                                    <li class="page-item active " aria-controls="dataTables-example "><a class="page-link " href=" ">1</a></li>
+                                    <li class="page-item " aria-controls="dataTables-example "><a class="page-link " href=" ">2</a></li>
+                                    <li class="page-item " aria-controls="dataTables-example "><a class="page-link " href=" ">3</a></li>
+                                    <li class="page-item " aria-controls="dataTables-example "><a class="page-link " href=" ">4</a></li>
+                                    <li class="page-item next " aria-controls="dataTables-example " id="dataTables-example_next "><a class="page-link " href=" ">Trang tiếp</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.main-content -->
+
+    </section>
+    <!-- JAVASCRIPT -->
+    <script src="plugins/jquery/jquery.min.js "></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>
