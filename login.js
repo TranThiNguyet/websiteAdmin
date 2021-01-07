@@ -7,7 +7,7 @@ function validate() {
     if (username == "admin" && password == "admin123") {
 
         alert("Login successfully");
-        window.location.href = "file:///D:/ThietKeVaLapTrinhWeb/websiteAdmin/index.html"; // Redirecting to other page.
+        window.location.href = "D:\ThietKeVaLapTrinhWeb\websiteAdmin\admin\index.html"; // Redirecting to other page.
 
     } else {
 
